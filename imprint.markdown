@@ -1,8 +1,8 @@
-## Welcome to SmartBricks
-Hi, check back soon
-
-
-## Imprint
+---
+layout: page
+title: Imprint
+permalink: /imprint/
+---
 
 BRICKMAKERS GmbH<br>
 Am Plan 14-16<br>
