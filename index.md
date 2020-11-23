@@ -1,7 +1,5 @@
 ## Welcome to SmartBricks
-Check back soon
-
-
+Hi, check back soon
 
 
 ## Imprint
