@@ -1,0 +1,32 @@
+.questionsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.questionContainer {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px, 20px;
+    p {
+        text-align: center;
+    }
+}
+
+.greyCircle {
+  width: 110px;
+  height: 110px;
+  background-color: #f3f5f8;
+  border-radius: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

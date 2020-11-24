@@ -112,7 +112,7 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .social-media-list &:hover {
@@ -252,3 +252,4 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
