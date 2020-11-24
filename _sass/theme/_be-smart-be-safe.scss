@@ -1,4 +1,4 @@
-.container {
+.beSmartBeSafeContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,7 +35,6 @@
   }
 }
 .textBold {
-  font: proxima-nova-semibold;
   font-weight: 600;
   font-size: 24px;
   @media screen and (max-width: 500px){

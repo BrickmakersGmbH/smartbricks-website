@@ -46,7 +46,8 @@ $on-laptop:        1200px !default;
 
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/be-smart-be-safe"
+  "theme/base",
+  "theme/layout",
+  "theme/be-smart-be-safe",
+  "theme/question"
 ;
