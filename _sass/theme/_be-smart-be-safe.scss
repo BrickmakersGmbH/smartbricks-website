@@ -15,15 +15,6 @@
   max-width: 800px;
   flex-shrink: 2;
 }
-.h1 {
-  
-  font-weight: 200;
-  color: $bm-amber;
-  @media screen and (max-width: 500px){
-    font-size: 55px;
-    line-height: 60px;
-}
-}
 .textNormal {
   font-size: 24px;
   line-height: 1.5;
