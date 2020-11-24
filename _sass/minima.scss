@@ -3,7 +3,6 @@
 // Define defaults for each variable.
 
 $base-font-family: proxima-nova, sans-serif !default;
-$base-font-family-bold: proxima-nova-extrabold, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -48,5 +47,6 @@ $on-laptop:        1200px !default;
 // Import partials.
 @import
   "minima/base",
-  "minima/layout"
+  "minima/layout",
+  "minima/be-smart-be-safe"
 ;

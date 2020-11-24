@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 800px;
+  flex-shrink: 2;
+}
+.h1 {
+  
+  font-weight: 200;
+  color: $bm-amber;
+  @media screen and (max-width: 500px){
+    font-size: 55px;
+    line-height: 60px;
+}
+}
+.textNormal {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  @media screen and (max-width: 500px){
+      font-size: 21px;
+      line-height: 36px;
+      letter-spacing: 0;
+  }
+}
+.textBold {
+  font: proxima-nova-semibold;
+  font-weight: 600;
+  font-size: 24px;
+  @media screen and (max-width: 500px){
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+}
+
+.imageDesktop {
+  background-image: url("../../assets/images/door-tr-1-1@3x.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  min-height: 400px;
+  @media screen and (max-width: 1023px) {
+      display: none;
+  }
+}
+
+.imageMobile {
+  background-image: url("../../assets/images/door-tr-1-1@3x.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 300px;
+  display: inline;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+.button {
+  padding: 15px 94px;
+  background-color: $bm-amber;
+  border: none;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: 15px 0px
+}
+  p {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+}
