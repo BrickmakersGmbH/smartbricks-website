@@ -253,3 +253,77 @@ table {
   }
 }
 
+
+/**
+Text
+*/
+h1 {
+  color: $bm-amber;
+  font-size: 74px;
+  @media screen and (max-width: 500px) {
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+
+h2 {
+  color: $bm-amber;
+  font-size: 50px;
+  margin-bottom: 40px;
+  @media screen and (max-width: 500px) {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+}
+
+.bm24blue600 {
+  font-weight: 600;
+  font-size: 24px;
+  @media screen and (max-width: 500px){
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+}
+
+.bm24blue400 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  @media screen and (max-width: 500px){
+      font-size: 21px;
+      line-height: 36px;
+      letter-spacing: 0;
+  }
+}
+
+.bm18amber600 {
+  font-weight: 600;
+  font-size: 18px;
+  color: $bm-amber;
+  @media screen and (max-width: 500px){
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+}
+
+.bm18blue400 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  @media screen and (max-width: 500px){
+      font-size: 21px;
+      line-height: 36px;
+      letter-spacing: 0;
+  }
+}
+
+.bm13blue400 {
+  font-size: 13px;
+  line-height: 1.28;
+  font-weight: 400;
+  @media screen and (max-width: 500px){
+      line-height: 18px;
+  }
+}

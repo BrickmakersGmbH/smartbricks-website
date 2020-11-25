@@ -4,7 +4,7 @@
   justify-content: center;
   margin: 0;
   height: 100%;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .textContainer {
@@ -14,25 +14,6 @@
   align-items: flex-start;
   max-width: 800px;
   flex-shrink: 2;
-}
-.textNormal {
-  font-size: 24px;
-  line-height: 1.5;
-  font-weight: 400;
-  @media screen and (max-width: 500px){
-      font-size: 21px;
-      line-height: 36px;
-      letter-spacing: 0;
-  }
-}
-.textBold {
-  font-weight: 600;
-  font-size: 24px;
-  @media screen and (max-width: 500px){
-    font-size: 21px;
-    line-height: 36px;
-    letter-spacing: 0;
-  }
 }
 
 .imageDesktop {
