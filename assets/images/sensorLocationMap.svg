@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="560" height="373" viewBox="0 0 560 373">
+    <defs>
+        <path id="t4k62muf3a" d="M0 0H22.891V22.904H0z"/>
+        <path id="4f1z59o15c" d="M0 0H22.891V22.904H0z"/>
+        <path id="lolltgwfbe" d="M0 0H22.891V22.904H0z"/>
+        <path id="jrt39qb8xg" d="M0 0H22.891V22.904H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-810 -1980) translate(230 1246) translate(580 734)">
+                    <path fill="#F3F5F8" d="M0 0H560V373H0z"/>
+                    <path fill="#CCC" d="M0 226.581H191.299V230.671H0zM223.182 226.581H560V230.671H223.182zM152.876 191.408H560V195.498H152.876z"/>
+                    <path fill="#CCC" d="M38.767 112.474L267.802 112.474 267.802 116.561 38.767 116.561z" transform="rotate(90 153.285 114.518)"/>
+                    <path fill="#CCC" d="M164.266 94.887L358.128 94.887 358.128 98.975 164.266 98.975z" transform="rotate(90 261.197 96.93)"/>
+                    <path fill="#CCC" d="M116.046 297.747L262.465 297.747 262.465 301.834 116.046 301.834z" transform="rotate(90 189.255 299.79)"/>
+                    <path fill="#CCC" d="M152.017 297.747L298.436 297.747 298.436 301.834 152.017 301.834z" transform="rotate(90 225.226 299.79)"/>
+                    <path fill="#CCC" d="M281.185 297.747L427.604 297.747 427.604 301.834 281.185 301.834z" transform="rotate(90 354.394 299.79)"/>
+                    <path fill="#CCC" d="M410.353 297.747L556.771 297.747 556.771 301.834 410.353 301.834z" transform="rotate(90 483.562 299.79)"/>
+                    <rect width="32.701" height="32.719" x="16.35" y="16.36" fill="#F2AF00" rx="8.175"/>
+                    <rect width="32.701" height="32.719" x="510.949" y="16.36" fill="#F2AF00" rx="8.175"/>
+                    <rect width="32.701" height="32.719" x="279.591" y="142.329" fill="#F2AF00" rx="8.175" transform="rotate(-180 295.942 158.689)"/>
+                    <rect width="32.701" height="32.719" x="16.35" y="323.921" fill="#F2AF00" rx="8.175"/>
+                    <g transform="translate(44.964 305.107)">
+                        <mask id="ki7ws3h2qb" fill="#fff">
+                            <use xlink:href="#t4k62muf3a"/>
+                        </mask>
+                        <g stroke="#F2AF00" stroke-width="2.453" mask="url(#ki7ws3h2qb)">
+                            <g transform="translate(-24.526 6.544)">
+                                <rect width="32.701" height="32.719" y="8.18" rx="8.175"/>
+                                <rect width="32.701" height="32.719" x="4.088" y="4.09" rx="12.263"/>
+                                <rect width="32.701" height="32.719" x="8.175" rx="16.35"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="rotate(90 11.432 56.428)">
+                        <mask id="g1n8cvx8qd" fill="#fff">
+                            <use xlink:href="#4f1z59o15c"/>
+                        </mask>
+                        <g stroke="#F2AF00" stroke-width="2.453" mask="url(#g1n8cvx8qd)">
+                            <g transform="translate(-24.526 6.544)">
+                                <rect width="32.701" height="32.719" y="8.18" rx="8.175"/>
+                                <rect width="32.701" height="32.719" x="4.088" y="4.09" rx="12.263"/>
+                                <rect width="32.701" height="32.719" x="8.175" rx="16.35"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="rotate(-180 257.518 33.946)">
+                        <mask id="37v5rgvp3f" fill="#fff">
+                            <use xlink:href="#lolltgwfbe"/>
+                        </mask>
+                        <g stroke="#F2AF00" stroke-width="2.453" mask="url(#37v5rgvp3f)">
+                            <g transform="translate(-24.526 6.544)">
+                                <rect width="32.701" height="32.719" y="8.18" rx="8.175"/>
+                                <rect width="32.701" height="32.719" x="4.088" y="4.09" rx="12.263"/>
+                                <rect width="32.701" height="32.719" x="8.175" rx="16.35"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="translate(308.204 123.515)">
+                        <mask id="4zm6hswnvh" fill="#fff">
+                            <use xlink:href="#jrt39qb8xg"/>
+                        </mask>
+                        <g stroke="#F2AF00" stroke-width="2.453" mask="url(#4zm6hswnvh)">
+                            <g transform="translate(-24.526 6.544)">
+                                <rect width="32.701" height="32.719" y="8.18" rx="8.175"/>
+                                <rect width="32.701" height="32.719" x="4.088" y="4.09" rx="12.263"/>
+                                <rect width="32.701" height="32.719" x="8.175" rx="16.35"/>
+                            </g>
+                        </g>
+                    </g>
+                    <rect width="33.518" height="33.537" x="506.044" y="323.103" fill="#002855" rx="8.175"/>
+                    <text fill="#CCC" font-family="ProximaNova-Light, Proxima Nova" font-size="40.876" font-weight="300">
+                        <tspan x="356.438" y="108.361">25qm</tspan>
+                    </text>
+                    <text fill="#CCC" font-family="ProximaNova-Light, Proxima Nova" font-size="40.876" font-weight="300">
+                        <tspan x="29.431" y="137.808">11qm</tspan>
+                    </text>
+                    <text fill="#CCC" font-family="ProximaNova-Light, Proxima Nova" font-size="40.876" font-weight="300">
+                        <tspan x="75.212" y="303.041">8qm</tspan>
+                    </text>
+                    <text fill="#002855" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.715">
+                        <tspan x="494.599" y="306.026">Gateway</tspan>
+                    </text>
+                    <text fill="#002855" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.715">
+                        <tspan x="448.818" y="35.255">Sensor</tspan>
+                    </text>
+                    <text fill="#002855" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.715">
+                        <tspan x="328.642" y="161.153">Sensor</tspan>
+                    </text>
+                    <text fill="#002855" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.715">
+                        <tspan x="65.401" y="342.642">Sensor</tspan>
+                    </text>
+                    <text fill="#002855" font-family="ProximaNova-Regular, Proxima Nova" font-size="14.715">
+                        <tspan x="65.401" y="35.255">Sensor</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

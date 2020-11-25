@@ -1,0 +1,107 @@
+.wasIstDerAirtrackerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .productInformation {
+    div {
+      display: flex;
+      .imageTextContainer {
+        flex-direction: column;
+        @media screen and (min-width: 500px){
+          margin-bottom: 60px
+        }
+        p {
+          max-width: 705px;
+        }
+      }
+      .iPhoneImageDesktop {
+        background-image: url("../../assets/images/phone-template@3x.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width: 160px;
+        min-height: 320px;
+        margin-left: 10px;
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .imageContainerDesktop {
+    position: relative;
+    min-height: 626px;
+    width: 100%;
+    max-width: 1300px;
+    @media screen and (max-width: 1024px) {
+      zoom: 55%;
+    }
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+    .officeImageDesktop {
+      background-image: url("../../assets/images/office@3x.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 850px;
+      height: 566px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .sensorLocationImageDesktop {
+      background-image: url("../../assets/images/sensorLocationMap.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 560px;
+      height: 373px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .imageContainerMobile {
+    @media screen and (min-width: 501px) {
+        display: none;
+      }
+    .iPhoneOfficeContainer {
+        position: relative;
+        min-width: calc(100vw - 40px);
+        height: 280px;
+
+      .iPhoneImageMobile {
+        background-image: url("../../assets/images/phone-template@3x.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width: 133px;
+        min-height: 300px;
+        position: absolute;
+        right: 0px;
+        top: -20px;
+      }
+      .officeImageMobile {
+        background-image: url("../../assets/images/office@3x.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: calc(100vw - 40px);
+        height: 233px;
+        position: absolute;
+      }
+    }
+
+    .sensorLocationImageMobile {
+      background-image: url("../../assets/images/sensorLocationMap.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: calc(100vw - 40px);
+      height: 233px;
+    }
+  }
+  .bm13blue400 {
+    width: 100%;
+    max-width: 1300px;
+    text-align: start;
+  }
+}
