@@ -128,11 +128,7 @@ blockquote {
   }
 }
 
-.dont-display-on-small {
-  @media screen and (max-width: 700px){
-    display: none;
-  }
-}
+
 
 
 
@@ -159,6 +155,18 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+.dont-display-on-small {
+  @media screen and (max-width: 700px){
+    display: none;
+  }
+}
+
+.dont-display-on-desktop {
+  @media screen and (min-width: 700px){
+    display: none;
   }
 }
 
@@ -271,6 +279,7 @@ h2 {
 
 .bm36blue600 {
   font-weight: 600;
+  margin-bottom: 20px;
   font-size: 36px;
   line-height: 36px;
   @media screen and (max-width: 500px){

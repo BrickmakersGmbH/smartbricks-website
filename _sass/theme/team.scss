@@ -1,0 +1,8 @@
+.mobile-image-team {
+    height: 125px;
+    width: 125px;
+  @media screen and (max-width: 700px) {
+    height: 105px;
+    width: 105px;
+  }
+}
