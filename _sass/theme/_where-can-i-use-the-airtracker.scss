@@ -1,0 +1,16 @@
+.whereCanIUseTheAirtrackerContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1350px;
+    .productInformation {
+        max-width: 840px;
+        align-self: flex-end;
+    }
+    .fieldOfUseExamples {
+        max-width: 1140px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
