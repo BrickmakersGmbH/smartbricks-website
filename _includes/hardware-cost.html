@@ -1,0 +1,19 @@
+<div class="hardwareCostContainer" style="background-color: {{include.color}};">
+  <p class="{{include.text-class}}">{{include.text}}</p>
+  <p class="{{include.text-class}} nowrap">{{include.price}}</p>
+</div>
+
+<style>
+  .hardwareCostContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  p {
+    margin: 0px;
+  }
+  .nowrap {
+      white-space: nowrap;
+  }
+</style>

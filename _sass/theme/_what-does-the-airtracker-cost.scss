@@ -1,0 +1,41 @@
+.whatDoesTheAirtrackerCostContainer {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .body {
+
+    .bm18blue400 {
+      max-width: 860px;
+    }
+    .bm36blue600 {
+      margin-bottom: 40px;
+    }
+    .columnContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .columnFirst {
+        max-width: 560px;
+        .bm18amber600 {
+          border: 3px solid $bm-amber;
+          padding: 16px 56px;
+          white-space: nowrap;
+          @media screen and (max-width: 600px) {
+            padding: 16px 40px;
+          }
+        }
+      }
+      .columnSecond {
+        .secondContainer {
+          max-width: 415px;
+          .costContainer {
+            margin: 5px 0px 20px 0px;
+          }
+        }
+      }
+    }
+  }
+}

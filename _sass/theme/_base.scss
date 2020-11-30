@@ -106,22 +106,8 @@ a {
   color: $brand-color;
   text-decoration: none;
   cursor: pointer;
-
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
-
   &:hover {
-    color: $text-color;
     text-decoration: none;
-  }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -320,6 +306,17 @@ h2 {
   }
 }
 
+.bm18blue600 {
+  font-weight: 600;
+  font-size: 18px;
+  @media screen and (max-width: 500px){
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+}
+
+
 .bm18blue400 {
   font-size: 18px;
   line-height: 1.5;
@@ -328,6 +325,17 @@ h2 {
       font-size: 21px;
       line-height: 36px;
       letter-spacing: 0;
+  }
+}
+
+.bm18amber400 {
+  font-weight: 400;
+  font-size: 18px;
+  color: $bm-amber;
+  @media screen and (max-width: 500px){
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
   }
 }
 
