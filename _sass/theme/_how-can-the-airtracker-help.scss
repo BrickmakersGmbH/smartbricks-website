@@ -1,0 +1,46 @@
+.howCanTheAirtrackerHelpContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .productInformation {
+    max-width: 1100px;
+    width: 100vw;
+    .columnsContainer {
+      display: flex;
+      margin-bottom: 40px;
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+      }
+      
+      .textColumn {
+        flex: 1 1;
+        .grenzwerteDownload {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          .pdf {
+            background-image: url("../../assets/images/icon-pdf@3x.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 56px;
+            width: 42px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .imageColumn {
+        flex: 2 1;
+        .sneezingImage {
+          background-image: url("../../assets/images/sneezing@3x.jpg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 600px;
+          margin-left: 40px;
+          @media screen and (max-width: 700px) {
+              margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}

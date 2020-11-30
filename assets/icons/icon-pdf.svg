@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="56" viewBox="0 0 42 56">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#F2AF00">
+            <g>
+                <g>
+                    <path d="M33 0l9 8.4V55c0 .552-.448 1-1 1H1c-.552 0-1-.448-1-1V1c0-.552.448-1 1-1h32zm-2 2H2v52h38V11h-6.814c-1.155 0-2.1-.896-2.18-2.03L31 8.814V2zm8.712 7L33 2.736v6.078c0 .082.053.152.128.176l.058.01h6.526z" transform="translate(-230 -3404) translate(230 2655) translate(0 749)"/>
+                    <text font-family="ProximaNova-Extrabld, Proxima Nova" font-size="15" font-weight="700" transform="translate(-230 -3404) translate(230 2655) translate(0 749)">
+                        <tspan x="6.36" y="28">PDF</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
