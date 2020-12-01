@@ -1,4 +1,4 @@
-- name: home
-  url: index.html
-- name: kontakt
-  url: kontakt.html
+- name: Home
+  url: /
+- name: Impressum
+  url: /impressum/
