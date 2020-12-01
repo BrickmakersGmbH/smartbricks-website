@@ -170,6 +170,12 @@ pre {
   }
 }
 
+.display-centered-mobile {
+  justify-content: flex-start;
+  @media screen and (max-width: 500px){
+    justify-content: center;
+  }
+}
 
 
 /**
