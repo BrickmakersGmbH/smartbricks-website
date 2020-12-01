@@ -1,0 +1,78 @@
+<div class="contact-container">
+  <div class="head-container">
+    <div class="left-column">
+      <h2>Kontakt</h2>
+      <p class="bm24blue400">
+        Haben Sie Interesse an SmartBricks, benötigen aber noch weitere
+        Informationen oder eine Beratung um zu erfahren, ob das Produkt wirklich
+        für Sie relevant ist? Schreiben Sie uns, und wir werden uns mit Ihnen in
+        Verbindung setzen.
+      </p>
+    </div>
+    <svg
+      class="right-column"
+      xmlns="http://www.w3.org/2000/svg"
+      width="360"
+      height="360"
+      viewBox="0 0 360 360"
+    >
+      <g fill="none" fill-rule="evenodd">
+        <g fill="#F2AF00">
+          <g>
+            <path
+              d="M340.964 95.66v180h-252l-.002-74.665-47.933.005v-12l47.933-.005v-18L18 171v-12l70.962-.005.002-63.336h252zm-99.332 102.935l-26.668 25.34-26.27-24.956-77.994 64.674h209.154l-78.222-65.058zm-140.676-82.968v43.368l21.901.005v12l-21.901-.005v85.146l78.978-65.49-78.978-75.024zm228 .012l-78.564 74.634 78.564 65.34V115.64zM81.75 219v12h-46.5v-12h46.5zm238.188-111.347H109.986l104.976 99.725 104.976-99.725zM81.643 129v12H29.029v-12h52.614z"
+              transform="translate(-1078 -195) translate(1078 195)"
+            />
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+  {% include spacing.html height=40 %}
+  <div class="form-container">
+      <form id="contact-form" method="POST">
+        
+        <div class="form-group">
+            <p class="bm36blue600">Kontaktformular</p>
+            <div class="input-group">
+                <span class="bm18blue600">Name</span>
+                <input placeholder="Vollständiger Name" name="form-name-input" type="text" name="name" class="form-control" required>
+            </div>
+            <div class="input-group">
+                <span class="bm18blue600">Email</span>
+                <input placeholder="Emailadresse" name="form-email-input" type="email" name="_replyto" class="form-control" required>
+            </div>
+            <div class="input-group">
+                <span class="bm18blue600">Telefon</span>
+                <input placeholder="Telefonnummer / Mobil" name="form-subject-input" type="text" name="subject" class="form-control" required>
+            </div>
+            <div class="input-group large ">
+                <span class="bm18blue600">Ihr Nachricht an uns</span>
+                <textarea placeholder="Ich habe Interesse an Luftmessungssensoren. Bitte kontaktieren Sie mich. &#10;Ich möchte X Räume ausstatten mit einer Gesamtgröße von etwa XXX qm." name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
+            </div>
+            <input type="text" name="_gotcha" style="display:none" />
+            <a class="button" id="sendMessage"><p class="bm18white600">Anfrage senden</p></a>
+        </div>
+    </form>
+  </div>
+</div>
+  {% include spacing.html height=40 %}
+  <div class="location-container"></div>
+</div>
+
+<script>
+$("#sendMessage").on("click", function() {
+    message = $("#contact-form").serialize();
+    $.ajax({
+        url: "https://formspree.io/f/xoqpnyvz", 
+        method: "POST",
+        data: {message: message},
+        dataType: "json",
+        complete: function(){
+            alert('Danke für die E-Mail, wir werden in Kürze mit Ihnen in Kontakt treten.');
+            console.log("test")
+        }
+    });
+    return false;
+});
+  </script>

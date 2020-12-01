@@ -260,6 +260,33 @@ table {
   }
 }
 
+/**
+Input
+*/
+input{
+  background-color: #f3f5f8;
+  border: 0;
+  padding: 9px;
+}
+input:focus{
+  border: 0;
+  outline: none;
+}
+input::placeholder {
+  color: $text-color
+}
+textarea{
+  background-color: #f3f5f8;
+  border: 0;
+  padding: 9px;
+}
+textarea:focus {
+  border: 0;
+  outline: none;
+}
+textarea::placeholder {
+  color: $text-color
+}
 
 /**
 Text
@@ -337,6 +364,17 @@ h2 {
   }
 }
 
+.bm18white600 {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  @media screen and (max-width: 500px){
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+}
+
 
 .bm18blue400 {
   font-size: 18px;
@@ -368,3 +406,14 @@ h2 {
       line-height: 18px;
   }
 }
+
+
+.bm13blue600 {
+  font-size: 13px;
+  line-height: 1.28;
+  font-weight: 600;
+  @media screen and (max-width: 500px){
+      line-height: 18px;
+  }
+}
+
