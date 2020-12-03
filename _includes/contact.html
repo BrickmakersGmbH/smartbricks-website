@@ -47,7 +47,7 @@
                 <input placeholder="Telefonnummer / Mobil" name="form-subject-input" type="text" name="subject" class="form-control" required>
             </div>
             <div class="input-group large ">
-                <span class="bm18blue600">Ihr Nachricht an uns</span>
+                <span class="bm18blue600">Ihre Nachricht an uns</span>
                 <textarea placeholder="Ich habe Interesse an Luftmessungssensoren. Bitte kontaktieren Sie mich. &#10;Ich möchte X Räume ausstatten mit einer Gesamtgröße von etwa XXX qm." name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
             </div>
             <input type="text" name="_gotcha" style="display:none" />
@@ -55,9 +55,25 @@
         </div>
     </form>
   </div>
-</div>
-  {% include spacing.html height=40 %}
-  <div class="location-container"></div>
+  {% include spacing.html height=100 %}
+  <div class="location-container">
+    <div class="center-container">
+      <div class="left-column">
+        <p class="bm36blue600">Standort</p>
+        <p class="bm24blue600">SmartBricks</p>
+        <p class="bm18blue400">Am Plan 14-16 </br>56068 Koblenz</p>
+        {% include img-text.html path="/assets/icons/device-mobile.svg" text="0261 205 999 00" %}
+        {% include img-text.html path="/assets/icons/contact-mail.svg" text="info@brickmakers.de" %}
+        {% include spacing.html height=40 %}
+        <p class="bm18blue400">Unser Büro in Koblenz liegt mitten in der Altstadt – in der Planpassage, die den Platz „Am Plan“ und die Pfuhlgasse miteinander verbindet.</p>
+      </div>
+      <div class="right-column">
+        <div class="location-image">
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include spacing.html height=100 %}
 </div>
 
 <script>
