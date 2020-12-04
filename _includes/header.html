@@ -44,7 +44,6 @@
     {%- if page_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        
         <label for="nav-trigger">
           <span id="menu-icon" class="menu-icon">
             <div id="nav-trigger">
@@ -92,11 +91,19 @@
       $("#nav-trigger-icon-closed").animate({opacity: 0}, 350)
     $("#nav-trigger-icon-opened").animate({opacity: 1}, 350)
     $("#nav-trigger-icon-opened").animateRotate(-360)
+    $('html, body').css({
+    overflow: 'hidden',
+    height: '100%'
+});
     } else {
       $("#nav-trigger-icon-opened").animate({opacity: 0})
     $("#nav-trigger-icon-opened").animateRotate(360)
       $("#nav-trigger-icon-closed").animateRotate(360)
       $("#nav-trigger-icon-closed").animate({opacity: 1})
+      $('html, body').css({
+    overflow: 'auto',
+    height: 'auto'
+});
     }
     $("#slide-left-white").animate({width:'toggle'},350)
     $("#slide-left-transparent").animate({width:'toggle'},350)
