@@ -1,25 +1,29 @@
-.beSmartBeSafeContainer {
+.be-smart-be-safe-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0;
   height: 100%;
   align-items: center;
-  .textContainer {
+  .text-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 800px;
     flex-shrink: 2;
-
-    .imageMobile {
-      background-image: url("../../assets/images/door-tr-1-1@3x.jpg");
+    .facts-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .image-mobile {
+      background-image: url("../../assets/images/airtracker-iphone@3x.png");
       background-size: contain;
       background-repeat: no-repeat;
       width: 100%;
       min-height: 300px;
       display: inline;
+      justify-self: center;
 
       @media screen and (min-width: 1024px) {
         display: none;
@@ -29,6 +33,8 @@
       padding: 15px 94px;
       background-color: $bm-amber;
       border: none;
+      outline: none;
+      cursor: pointer;
       @media screen and (max-width: 500px) {
         width: 100%;
         padding: 15px 0px;
@@ -41,12 +47,13 @@
       }
     }
   }
-  .imageDesktop {
-    background-image: url("../../assets/images/door-tr-1-1@3x.jpg");
+  .image-desktop {
+    background-image: url("../../assets/images/airtracker-iphone@3x.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 600px;
-    min-height: 400px;
+    max-width: 670px;
+    width: 100%;
+    height: 670px;
     @media screen and (max-width: 1023px) {
       display: none;
     }
