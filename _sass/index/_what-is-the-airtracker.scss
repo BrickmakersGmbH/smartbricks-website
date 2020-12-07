@@ -1,35 +1,24 @@
-.whatIsTheAirtrackerContainer {
+.what-is-the-airtracker-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .productInformation {
+  .product-information {
     div {
       display: flex;
-      .imageTextContainer {
+      .image-text-container {
         flex-direction: column;
         @media screen and (min-width: 500px){
           margin-bottom: 60px
         }
         p {
-          max-width: 705px;
-        }
-      }
-      .iPhoneImageDesktop {
-        background-image: url("../../assets/images/phone-template@3x.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        min-width: 160px;
-        min-height: 320px;
-        margin-left: 10px;
-        @media screen and (max-width: 500px) {
-          display: none;
+          max-width: 1000px;
         }
       }
     }
   }
 
-  .imageContainerDesktop {
+  .image-container-desktop {
     position: relative;
     min-height: 626px;
     width: 100%;
@@ -40,7 +29,7 @@
     @media screen and (max-width: 500px) {
       display: none;
     }
-    .officeImageDesktop {
+    .office-image-desktop {
       background-image: url("../../assets/images/office@3x.jpg");
       background-size: contain;
       background-repeat: no-repeat;
@@ -50,7 +39,7 @@
       top: 0;
       left: 0;
     }
-    .sensorLocationImageDesktop {
+    .sensor-location-image-desktop {
       background-image: url("../../assets/images/sensorLocationMap.svg");
       background-size: contain;
       background-repeat: no-repeat;
@@ -62,36 +51,21 @@
     }
   }
 
-  .imageContainerMobile {
+  .image-container-mobile {
     @media screen and (min-width: 501px) {
         display: none;
       }
-    .iPhoneOfficeContainer {
-        position: relative;
-        min-width: calc(100vw - 40px);
-        height: 280px;
-
-      .iPhoneImageMobile {
-        background-image: url("../../assets/images/phone-template@3x.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        min-width: 133px;
-        min-height: 300px;
-        position: absolute;
-        right: 0px;
-        top: -20px;
-      }
-      .officeImageMobile {
+    
+      .office-image-mobile {
         background-image: url("../../assets/images/office@3x.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         width: calc(100vw - 40px);
         height: 233px;
-        position: absolute;
       }
-    }
+   
 
-    .sensorLocationImageMobile {
+    .sensor-location-image-mobile {
       background-image: url("../../assets/images/sensorLocationMap.svg");
       background-size: contain;
       background-repeat: no-repeat;
