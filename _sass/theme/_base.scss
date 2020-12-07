@@ -297,6 +297,7 @@ Text
 h1 {
   color: $bm-amber;
   font-size: 74px;
+  font-weight: 300;
   @media screen and (max-width: 500px) {
     font-size: 55px;
     line-height: 60px;
@@ -307,14 +308,15 @@ h2 {
   color: $bm-amber;
   font-size: 50px;
   margin-bottom: 40px;
+  font-weight: 300;
   @media screen and (max-width: 500px) {
     font-size: 35px;
     margin-bottom: 20px;
   }
 }
 
-.bm36blue600 {
-  font-weight: 600;
+.bm36blue800 {
+  font-weight: 800;
   margin-bottom: 20px;
   font-size: 36px;
   line-height: 36px;
@@ -339,6 +341,17 @@ h2 {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
+  @media screen and (max-width: 500px) {
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+}
+
+.bm18amber700 {
+  font-weight: 700;
+  font-size: 18px;
+  color: $bm-amber;
   @media screen and (max-width: 500px) {
     font-size: 21px;
     line-height: 36px;
@@ -441,6 +454,7 @@ Buttons
 
 .button-secondary {
   border: 2px solid $bm-amber;
+  border-radius: 1px;
   padding: 15px 44px;
   background-color: white;
   outline: none;
