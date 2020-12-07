@@ -19,14 +19,6 @@
       flex-wrap: wrap;
       .columnFirst {
         max-width: 560px;
-        .bm18amber600 {
-          border: 3px solid $bm-amber;
-          padding: 16px 56px;
-          white-space: nowrap;
-          @media screen and (max-width: 600px) {
-            padding: 16px 40px;
-          }
-        }
       }
       .columnSecond {
         .secondContainer {

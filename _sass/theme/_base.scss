@@ -1,46 +1,64 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
   margin: 0;
   padding: 0;
 }
-
-
 
 /**
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+    $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
-
-
 
 /**
  * `main` element
@@ -49,8 +67,6 @@ main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
-
-
 /**
  * Images
  */
@@ -58,8 +74,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -72,12 +86,11 @@ figcaption {
   font-size: $small-font-size;
 }
 
-
-
 /**
  * Lists
  */
-ul, ol {
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
@@ -88,16 +101,17 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -110,7 +124,6 @@ a {
     text-decoration: none;
   }
 }
-
 
 /**
  * Blockquotes
@@ -127,10 +140,6 @@ blockquote {
     margin-bottom: 0;
   }
 }
-
-
-
-
 
 /**
  * Code formatting
@@ -159,31 +168,30 @@ pre {
 }
 
 .dont-display-on-small {
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     display: none;
   }
 }
 
 .dont-display-on-desktop {
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 700px) {
     display: none;
   }
 }
 
 .display-centered-mobile {
   justify-content: flex-start;
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     justify-content: center;
   }
 }
-
 
 /**
  * Wrapper
  */
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -192,13 +200,11 @@ pre {
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
 }
-
-
 
 /**
  * Clearfix
@@ -209,19 +215,17 @@ pre {
   clear: both;
 }
 
-
-
 /**
  * Icons
  */
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #{$grey-color};
+  padding-right: 5px;
+  vertical-align: text-top;
 }
 
 .social-media-list {
@@ -229,8 +233,6 @@ pre {
     padding-top: 5px;
   }
 }
-
-
 
 /**
  * Tables
@@ -247,7 +249,8 @@ table {
       background-color: lighten($grey-color-light, 6%);
     }
   }
-  th, td {
+  th,
+  td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
@@ -263,19 +266,19 @@ table {
 /**
 Input
 */
-input{
+input {
   background-color: #f3f5f8;
   border: 0;
   padding: 9px;
 }
-input:focus{
+input:focus {
   border: 0;
   outline: none;
 }
 input::placeholder {
-  color: $text-color
+  color: $text-color;
 }
-textarea{
+textarea {
   background-color: #f3f5f8;
   border: 0;
   padding: 9px;
@@ -285,7 +288,7 @@ textarea:focus {
   outline: none;
 }
 textarea::placeholder {
-  color: $text-color
+  color: $text-color;
 }
 
 /**
@@ -315,7 +318,7 @@ h2 {
   margin-bottom: 20px;
   font-size: 36px;
   line-height: 36px;
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     font-size: 25px;
     line-height: 36px;
     letter-spacing: 0;
@@ -325,7 +328,7 @@ h2 {
 .bm24blue600 {
   font-weight: 600;
   font-size: 24px;
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     font-size: 21px;
     line-height: 36px;
     letter-spacing: 0;
@@ -336,10 +339,10 @@ h2 {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
-  @media screen and (max-width: 500px){
-      font-size: 21px;
-      line-height: 36px;
-      letter-spacing: 0;
+  @media screen and (max-width: 500px) {
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
   }
 }
 
@@ -347,7 +350,7 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   color: $bm-amber;
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     font-size: 21px;
     line-height: 36px;
     letter-spacing: 0;
@@ -357,7 +360,7 @@ h2 {
 .bm18blue600 {
   font-weight: 600;
   font-size: 18px;
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     font-size: 21px;
     line-height: 36px;
     letter-spacing: 0;
@@ -368,22 +371,21 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   color: white;
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     font-size: 21px;
     line-height: 36px;
     letter-spacing: 0;
   }
 }
 
-
 .bm18blue400 {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  @media screen and (max-width: 500px){
-      font-size: 21px;
-      line-height: 36px;
-      letter-spacing: 0;
+  @media screen and (max-width: 500px) {
+    font-size: 21px;
+    line-height: 36px;
+    letter-spacing: 0;
   }
 }
 
@@ -391,7 +393,7 @@ h2 {
   font-weight: 400;
   font-size: 18px;
   color: $bm-amber;
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     font-size: 21px;
     line-height: 36px;
     letter-spacing: 0;
@@ -402,18 +404,54 @@ h2 {
   font-size: 13px;
   line-height: 1.28;
   font-weight: 400;
-  @media screen and (max-width: 500px){
-      line-height: 18px;
+  @media screen and (max-width: 500px) {
+    line-height: 18px;
   }
 }
-
 
 .bm13blue600 {
   font-size: 13px;
   line-height: 1.28;
   font-weight: 600;
-  @media screen and (max-width: 500px){
-      line-height: 18px;
+  @media screen and (max-width: 500px) {
+    line-height: 18px;
   }
 }
 
+/** 
+Buttons
+*/
+.button {
+  padding: 15px 94px;
+  background-color: $bm-amber;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: 15px 0px;
+  }
+  p {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+}
+
+.button-secondary {
+  border: 2px solid $bm-amber;
+  padding: 15px 44px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: 15px 0px;
+  }
+  p {
+    margin-bottom: 0px;
+    width: 100%;
+    white-space: nowrap;
+  }
+}

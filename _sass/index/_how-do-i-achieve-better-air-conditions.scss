@@ -1,20 +1,20 @@
-.howCanTheAirtrackerHelpContainer {
+.how-do-i-achieve-better-air-conditions {
   display: flex;
   justify-content: center;
   max-width: 1440px;
   width: 100%;
-  .productInformation {
+  .product-information {
     max-width: 1100px;
-    .columnsContainer {
+    .columns-container {
       display: flex;
       margin-bottom: 40px;
       @media screen and (max-width: 700px) {
         flex-direction: column;
       }
       
-      .textColumn {
+      .text-column{
         flex: 1 1;
-        .grenzwerteDownload {
+        .grenzwerte-download {
           display: flex;
           align-items: center;
           margin-bottom: 20px;
@@ -28,9 +28,9 @@
           }
         }
       }
-      .imageColumn {
+      .image-column {
         flex: 2 1;
-        .sneezingImage {
+        .sneezing-image {
           background-image: url("../../assets/images/sneezing@3x.jpg");
           background-size: contain;
           background-repeat: no-repeat;
