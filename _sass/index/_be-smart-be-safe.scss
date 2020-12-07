@@ -29,23 +29,7 @@
         display: none;
       }
     }
-    .button {
-      padding: 15px 94px;
-      background-color: $bm-amber;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      @media screen and (max-width: 500px) {
-        width: 100%;
-        padding: 15px 0px;
-      }
-      p {
-        color: white;
-        font-size: 24px;
-        margin-bottom: 0px;
-        width: 100%;
-      }
-    }
+    
   }
   .image-desktop {
     background-image: url("../../assets/images/airtracker-iphone@3x.png");
