@@ -1,8 +1,40 @@
 .mobile-image-team {
-    height: 125px;
-    width: 125px;
+  height: 125px;
+  width: 125px;
   @media screen and (max-width: 700px) {
     height: 105px;
     width: 105px;
+  }
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  .center-container {
+    max-width: 1140px;
+    .grid-container {
+      max-width: 1140px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+      justify-content: space-between;
+      column-gap: 92px;
+
+      @media screen and (max-width: 700px) {
+        column-gap: 0px;
+      }
+      .item-right {
+        grid-column-start: 2;
+      }
+      .item-left {
+        grid-row-start: 2;
+        margin-right: 20px;
+      }
+    }
   }
 }
