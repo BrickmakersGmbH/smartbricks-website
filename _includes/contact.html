@@ -29,19 +29,19 @@
             <p class="bm36blue800">Kontaktformular</p>
             <div class="input-group">
                 <span class="bm18blue600">Name</span>
-                <input placeholder="Vollständiger Name" name="form-name-input" type="text" name="name" class="form-control" required>
+                <input placeholder="Vollständiger Name" id="name" name="form-name-input" type="text" name="name" class="form-control" required>
             </div>
             <div class="input-group">
                 <span class="bm18blue600">Email</span>
-                <input placeholder="Emailadresse" name="form-email-input" type="email" name="_replyto" class="form-control" required>
+                <input placeholder="Emailadresse" name="form-email-input" id="email" type="email" name="_replyto" class="form-control" required>
             </div>
             <div class="input-group">
                 <span class="bm18blue600">Telefon</span>
-                <input placeholder="Telefonnummer / Mobil" name="form-subject-input" type="text" name="subject" class="form-control" required>
+                <input placeholder="Telefonnummer / Mobil" name="form-subject-input" id="telefon" type="text" name="subject" class="form-control" required>
             </div>
             <div class="input-group large ">
                 <span class="bm18blue600">Ihre Nachricht an uns</span>
-                <textarea placeholder="Ich habe Interesse an Luftmessungssensoren. Bitte kontaktieren Sie mich. &#10;Ich möchte X Räume ausstatten mit einer Gesamtgröße von etwa XXX qm." name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
+                <textarea id="message" placeholder="Ich habe Interesse an Luftmessungssensoren. Bitte kontaktieren Sie mich. &#10;Ich möchte X Räume ausstatten mit einer Gesamtgröße von etwa XXX qm." name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
             </div>
             <input type="text" name="_gotcha" style="display:none" />
             <a class="button" id="sendMessage"><p class="bm18white600">Anfrage senden</p></a>
@@ -71,15 +71,21 @@
 
 <script>
 $("#sendMessage").on("click", function() {
-    message = $("#contact-form").serialize();
+    const name = $("#name").val()
+    const email = $("#email").val()
+    const telefon = $("#telefon").val()
+    const message = $("#message").val();
     $.ajax({
         url: "https://formspree.io/f/xoqpnyvz", 
         method: "POST",
-        data: {message: message},
+        data: {name: name, email: email, telefon: telefon, message: message},
         dataType: "json",
-        complete: function(){
+        success: function(){
             alert('Danke für die E-Mail, wir werden in Kürze mit Ihnen in Kontakt treten.');
             console.log("test")
+        }, 
+        error: function() {
+          alert('Die E-Mail konnte leider nicht versendet werden. Bitte wenden sie sich direkt an die E-Mail: info@brickmakers.de')
         }
     });
     return false;
