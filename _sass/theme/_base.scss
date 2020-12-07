@@ -269,7 +269,9 @@ Input
 input {
   background-color: #f3f5f8;
   border: 0;
-  padding: 9px;
+  padding: 15px;
+  font-size: 18px;
+  color: $text-color;
 }
 input:focus {
   border: 0;
@@ -277,11 +279,15 @@ input:focus {
 }
 input::placeholder {
   color: $text-color;
+  font-size: 18px;
+  line-height: 28px;
 }
 textarea {
   background-color: #f3f5f8;
   border: 0;
-  padding: 9px;
+  padding: 15px;
+  font-size: 18px;
+  color: $text-color;
 }
 textarea:focus {
   border: 0;
@@ -289,6 +295,8 @@ textarea:focus {
 }
 textarea::placeholder {
   color: $text-color;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 /**
