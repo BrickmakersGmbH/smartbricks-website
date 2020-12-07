@@ -1,0 +1,55 @@
+.form-container {
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .form-group {
+        .bm36blue800 {
+          align-self: flex-start;
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        display: flex;
+        justify-content: space-between;
+        max-width: 1140px;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1140px) {
+          flex-direction: column;
+        }
+        .input-group {
+          display: flex;
+          flex-direction: column;
+          min-width: 200px;
+          width: 100%;
+          max-width: 360px;
+          margin-bottom: 40px;
+
+          @media screen and (max-width: 1140px) {
+            margin-bottom: 20px;
+          }
+
+          textarea {
+            width: calc(100% - 2 * $spacing-unit);
+            max-width: 1140px;
+            min-height: 147px;
+          }
+        }
+        .large {
+          max-width: 1140px;
+        }
+        .button {
+          padding: 15px 0px;
+          background-color: $bm-amber;
+          width: 100%;
+          max-width: 270px;
+          p {
+            margin: 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
