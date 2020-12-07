@@ -1,10 +1,10 @@
-<div class="hardwareCostContainer" style="background-color: {{include.color}};">
+<div class="hardware-cost-container" style="background-color: {{include.color}};">
   <p class="{{include.text-class}}">{{include.text}}</p>
-  <p class="{{include.text-class}} nowrap">{{include.price}}</p>
+  <p class="{{include.text-class}} no-wrap">{{include.price}}</p>
 </div>
 
 <style>
-  .hardwareCostContainer {
+  .hardware-cost-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,7 @@
   p {
     margin: 0px;
   }
-  .nowrap {
+  .no-wrap {
       white-space: nowrap;
   }
 </style>

@@ -80,8 +80,23 @@
         <div class="trigger">
           {%- for nav in site.data.navigation -%}
             {% if nav.url != "/impressum/" %}
-              <a style="{% if page.url == nav.url %}color: #f2af00;{%endif%}" class="page-link" href="{{nav.url}}">{{nav.name}}</a>
-            {%endif%}
+            {% if nav.url == "/kontakt/" %} 
+            <a style="{% if page.url == nav.url %}color: #f2af00;{%endif%}" class="page-link" href="{{nav.url}}">{{nav.name}}
+            <svg style="margin-bottom: -7px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+              <g fill="none" fill-rule="evenodd">
+                  <g fill="{% if page.url == '/kontakt/' %} #f2af00 {% else %} #002855 {% endif %}">
+                      <g>
+                          <path d="M28.414 7.972v15h-21V16.75H3.418v-1h3.994v-1.5H1.5v-1h5.913V7.972h21zm-8.278 8.578l-2.222 2.111-2.19-2.08-6.499 5.39h17.43l-6.519-5.421zM8.413 9.636v3.614h1.825v1H8.413v7.095l6.582-5.457-6.582-6.252zm19 0l-6.547 6.22 6.547 5.445V9.637zm-20.6 8.614v1H2.936v-1h3.875zm19.849-9.279H9.165l8.748 8.31 8.748-8.31zM6.803 10.75v1H2.419v-1h4.385z" transform="translate(-1340 -49) translate(1340 49)"/>
+                      </g>
+                  </g>
+              </g>
+          </svg></a>
+        </a>
+        </div>
+          {% else %}
+              <a style="{% if page.url == nav.url %}color: #f2af00;{%endif%} " class="page-link" href="{{nav.url}}">{{nav.name}}</a>
+           {%endif%}
+          {%endif%}
           {%- endfor -%}
         </div>
       </nav>
