@@ -70,9 +70,10 @@
         </label>
 
         <div class="trigger">
-          
           {%- for nav in site.data.navigation -%}
-            <a style="{% if page.url == nav.url %}color: #f2af00;{%endif%}" class="page-link" href="{{nav.url}}">{{nav.name}}</a>
+            {% if nav.url != "/impressum/" %}
+              <a style="{% if page.url == nav.url %}color: #f2af00;{%endif%}" class="page-link" href="{{nav.url}}">{{nav.name}}</a>
+            {%endif%}
           {%- endfor -%}
         </div>
       </nav>
