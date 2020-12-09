@@ -12,6 +12,11 @@
     align-items: flex-start;
     max-width: 800px;
     flex-shrink: 2;
+    sub {
+      font-size: 12px;
+      vertical-align: baseline;
+    }
+
     .facts-container{
       display: flex;
       flex-direction: column;
