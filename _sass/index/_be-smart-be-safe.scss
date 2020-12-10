@@ -12,6 +12,14 @@
     align-items: flex-start;
     max-width: 800px;
     flex-shrink: 2;
+
+    h1 {
+      line-height: 100%;
+      span {
+        display: inline-block;
+      }
+    }
+
     sub {
       font-size: 12px;
       vertical-align: baseline;
