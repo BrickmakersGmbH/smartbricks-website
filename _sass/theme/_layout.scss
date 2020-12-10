@@ -3,12 +3,32 @@
  */
 .site-header {
   margin-top: 40px;
-  padding-bottom: 40px;
   padding: 0px $spacing-unit;
-  
   min-height: $spacing-unit * 1.865;
-  display: flex;
-  justify-content: space-between;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0px $spacing-unit-small;
+  }
+
+  @media (max-width: $on-palm) {
+    margin-top: 25px;
+
+    .header-content {
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba($brand-color, 0.15);
+    }
+  }
+
+  @media (min-width: $on-palm) {
+    .header-content {
+      margin-bottom: 100px;
+    }
+  }
 
   @media (min-width: 1024px) {
     margin-left: calc((100vw - 1024px) * 0.4);
@@ -24,7 +44,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: $on-palm){
       width: 0px;
     }
   }
@@ -39,7 +59,7 @@
     top: 0;
     right: 0;
    
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: $on-palm){
       width: 0px;
     }
     .mobile-nav-container {
@@ -47,13 +67,15 @@
       flex-direction: column;
       .small-logo {
         width: 141px;
-        padding: 43px 0px 20px 20px;
+        padding: 20px 0px 10px 20px;
         margin: 10px 0px;
       }
       .mobile-link-container {
         padding-left: 20px;
+        border-top: solid 1px rgba($brand-color, 0.15);
         .mobile-page-link {
-          margin: 10px 0px;
+          border-bottom: solid 1px rgba($brand-color, 0.15);
+          padding: 12px 0px;
         }
       }
     }
@@ -67,10 +89,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   display: flex;
-  
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
 
   &,
   &:visited {
@@ -80,6 +99,12 @@
     margin-bottom: 0px;
     text-decoration: none;
     margin-left: 20px;
+
+    @media (max-width: $on-palm) {
+      @include relative-font-size(1.5);
+      margin-top: 12px;
+      margin-left: 0px;
+    }
   }
   svg {
     @media screen and (max-width: 500px){
@@ -87,10 +112,9 @@
     }
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: $on-palm){
     flex-direction: column;
     align-items: flex-start;
-    
   }
 }
 
@@ -130,13 +154,8 @@
   }
 
   @include media-query($on-palm) {
-    position: absolute;
-    right: $spacing-unit / 2;
-    text-align: right;
-
     label[for="nav-trigger"] {
       display: block;
-      float: right;
       width: 36px;
       height: 36px;
       z-index: 2;
@@ -145,11 +164,9 @@
 
     .menu-icon {
       display: block;
-      float: right;
       width: 36px;
       height: 26px;
       line-height: 0;
-      padding-top: 10px;
       text-align: center;
 
       > svg {
@@ -189,7 +206,7 @@
     margin-right: calc((100vw - 1024px) * 0.4);
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: $on-palm){
     justify-content: center;
     align-items: center;
   }

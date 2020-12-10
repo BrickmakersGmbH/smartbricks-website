@@ -1,6 +1,5 @@
 <header class="site-header" role="banner">
-  <div id="slide-left-transparent">
-  </div>
+  <div id="slide-left-transparent"></div>
   <div id="slide-left-white">
     <div class="mobile-nav-container">
       <svg class="small-logo" xmlns="http://www.w3.org/2000/svg" width="150" height="16" viewBox="0 0 150 16">
@@ -16,19 +15,18 @@
                 </g>
             </g>
         </g>
-    </svg>
+      </svg>
     
-      {% include border.html%}
       <div class="mobile-link-container">
-      {%- for nav in site.data.navigation -%}
+        {%- for nav in site.data.navigation -%}
         <div class="mobile-page-link">
-        <a style="{% if page.url == nav.url %}color: #f2af00;{%endif%}" class="page-link" href="{{nav.url}}">{{nav.name}}</a>
-      </div>
-        {% include border.html %}
+          <a style="{% if page.url == nav.url %}color: #f2af00;{%endif%}" class="page-link" href="{{nav.url}}">{{nav.name}}</a>
+        </div>
         {%- endfor -%}
-    </div>
+      </div>
     </div>
   </div>
+  <div class="header-content">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
@@ -103,6 +101,7 @@
         </div>
       </nav>
     {%- endif -%}
+  </div>
 </header>
 
 <script>
@@ -115,21 +114,21 @@
     if(menuOpen) {
       $("#nav-trigger-icon-closed").animateRotate(-360)
       $("#nav-trigger-icon-closed").animate({opacity: 0}, 350)
-    $("#nav-trigger-icon-opened").animate({opacity: 1}, 350)
-    $("#nav-trigger-icon-opened").animateRotate(-360)
-    $('html, body').css({
-    overflow: 'hidden',
-    height: '100%'
-});
+      $("#nav-trigger-icon-opened").animate({opacity: 1}, 350)
+      $("#nav-trigger-icon-opened").animateRotate(-360)
+      $('body').css({
+        overflowY: 'hidden',
+        height: '100%'
+      });
     } else {
       $("#nav-trigger-icon-opened").animate({opacity: 0})
-    $("#nav-trigger-icon-opened").animateRotate(360)
+      $("#nav-trigger-icon-opened").animateRotate(360)
       $("#nav-trigger-icon-closed").animateRotate(360)
       $("#nav-trigger-icon-closed").animate({opacity: 1})
-      $('html, body').css({
-    overflow: 'auto',
-    height: 'auto'
-});
+      $('body').css({
+        overflowY: 'auto',
+        height: 'auto'
+      });
     }
     $("#slide-left-white").animate({width:'toggle'},350)
     $("#slide-left-transparent").animate({width:'toggle'},350)
