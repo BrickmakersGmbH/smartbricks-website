@@ -25,9 +25,14 @@
       vertical-align: baseline;
     }
 
-    .facts-container{
-      display: flex;
-      flex-direction: column;
+    .facts-container {
+      margin-left: 20px;
+
+      li {
+        @extend .bm24blue600;
+        padding-left: 4px;
+        list-style-image: url(../../assets/icons/smart-bricks-bricks.svg);
+      }
     }
     .image-mobile {
       background-image: url("../../assets/images/airtracker-iphone@3x.png");
