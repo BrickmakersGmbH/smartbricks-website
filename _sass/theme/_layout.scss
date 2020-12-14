@@ -337,6 +337,11 @@
   @include relative-font-size(1.5);
 }
 
+sub {
+  font-size: 66%;
+  vertical-align: baseline;
+}
+
 /**
  * Posts
  */
