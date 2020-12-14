@@ -30,7 +30,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px, 20px;
+  margin: 0px 20px;
+
+  @media screen and (max-width: $on-palm) {
+    max-width: 100%;
+  }
+
   p {
       text-align: center;
 
