@@ -16,7 +16,7 @@
       .column-second {
         max-width: 270px;
 
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: $on-palm) {
           max-width: 100%;
         }
         .column-second-container {

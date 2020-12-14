@@ -26,6 +26,10 @@
           width: 100%;
           max-width: 360px;
           margin-bottom: 40px;
+          
+          @media screen and (max-width: $on-palm){
+            max-width: 100%;
+          }
 
           @media screen and (max-width: 1140px) {
             margin-bottom: 20px;
@@ -39,12 +43,21 @@
         }
         .large {
           max-width: 1140px;
+
+          @media screen and (max-width: $on-palm){
+            max-width: 100%;
+          }
         }
         .button {
           padding: 15px 0px;
           background-color: $bm-amber;
           width: 100%;
           max-width: 270px;
+
+          @media screen and (max-width: $on-palm){
+            max-width: 100%;
+          }
+
           p {
             margin: 0px;
             text-align: center;
