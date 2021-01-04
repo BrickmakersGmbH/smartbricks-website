@@ -1,62 +1,77 @@
 .what-does-the-airtracker-cost-container {
-  max-width: 1440px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  .body {
-    .column-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      .column-first {
-        max-width: 705px;
-      }
-      .column-second {
-        max-width: 270px;
 
-        @media screen and (max-width: $on-palm) {
-          max-width: 100%;
+  .pricing-info {
+    @extend .bm18blue400;
+    margin-bottom: 60px;
+  }
+
+  .pricing-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .pricing {
+      text-align: center;
+      background-color: $bm-amber;
+      color: white;
+      border-radius: 10px;
+      padding: 40px 30px;
+      margin: 0 10px;
+
+      &.highlighted {
+        padding: 60px 24px 50px;
+      }
+
+      .tier {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.56;
+      }
+      .price {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        .value {
+          font-size: 74px;
+          font-weight: 300;
+          line-height: 1.2;
         }
-        .column-second-container {
-          text-align: center;
-          background-color: $bm-amber;
-          color: white;
-          border-radius: 10px;
-          padding: 20px;
-          .from {
-            font-weight: 300;
-            line-height: 1.05;
-            font-size: 35px;
-            margin-bottom: 0px;
-          }
-          .price {
-            display: flex;
-            justify-content: center;
-            align-items: baseline;
-            p {
-              margin: 0;
-            }
-            .numb {
-              font-size: 74px;
-              font-weight: 300;
-            }
-            .sign {
-              font-size: 35px;
-            }
-          }
-          .month {
-            font-weight: 600;
-          }
-          .recommendation {
-            text-align: start;
-            color: $text-color;
-            font-size: 13px;
-            margin-bottom: 0px;
-          }
+        .sign {
+          font-size: 35px;
         }
       }
+      .price-info {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.56;
+      }
+
+      .min-sensor-count {
+        font-size: 32px;
+        font-weight: 300;
+        margin-top: 20px
+      }
+    }
+  }
+
+  .fine-print {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 60px;
+
+    .fine-print-text {
+      max-width: 800px;
+      text-align: center;
+      color: $text-color;
+      font-size: 13px;
+      margin-bottom: 60px;
     }
   }
 }

@@ -1,30 +1,53 @@
 <div class="what-does-the-airtracker-cost-container">
-  <div class="body">
-    {% include brickH2.html title="Was kostet das Lösungskonzept für gute Luftqualität?"%} {% include spacing.html height=40 %}
-    <div class="column-container">
-      <div class="column-first">
-        <p class="bm18blue400">
-          Eine genaue Kostenaufstellung ist abhängig von verschiedenen Faktoren, wie zum Beispiel der Raumgröße und der damit verbundenen Anzahl an eingesetzten Sensoren sowie der Vertragslaufzeit. In einem persönlichen Gespräch können wir alle Notwendigkeiten ermitteln und Ihnen ein individuelles Angebot erstellen.
-        </p>
-        {% include spacing.html height=60 %}
-        {% include contact-button.html text="Angebot anfordern"%}
-        {% include spacing.html height=60 %}
+
+  <div class="pricing-header">
+    {% include brickH2.html title="Was kostet das Lösungskonzept für gute Luftqualität?"%}
+
+    <p class="pricing-info">
+      Eine genaue Kostenaufstellung ist abhängig von verschiedenen Faktoren, wie zum Beispiel der Raumgröße und der
+      damit verbundenen Anzahl an eingesetzten Sensoren sowie der Vertragslaufzeit. In einem persönlichen Gespräch
+      können wir alle Notwendigkeiten ermitteln und Ihnen ein individuelles Angebot erstellen.
+    </p>
+  </div>
+
+  <div class="pricing-cards">
+    <div class="pricing">
+      <div class="tier">small</div>
+      <div class="price">
+        <div class="value">24,90</div>
+        <div class="sign">€</div>
       </div>
-      <div class="column-second">
-        <div class="column-second-container">
-          {% include spacing.html height="20" %}
-          <p class="from">ab</p>
-          <div class="price">
-            <p class="numb">19,90</p>
-            <p class="sign">€</p>
-          </div>
-          <p class="month">pro Monat & Sensor</p>
-          {% include spacing.html height="20" %}
-          <p class="recommendation">
-            Pro Raum wird ein Sensor empfohlen. Mindestlaufzeit 6 Monate. Danach monatlich kündbar. 100€ pro nicht zurückgegebenem Sensor.
-          </p>
-        </div>
-      </div>
+      <div class="price-info">pro Monat & Sensor</div>
+      <div class="min-sensor-count">ab 5 Sensoren</div>
     </div>
+    <div class="pricing highlighted">
+      <div class="tier">medium</div>
+      <div class="price">
+        <div class="value">22,90</div>
+        <div class="sign">€</div>
+      </div>
+      <div class="price-info">pro Monat & Sensor</div>
+      <div class="min-sensor-count">ab 25 Sensoren</div>
+    </div>
+    <div class="pricing">
+      <div class="tier">large</div>
+      <div class="price">
+        <div class="value">19,90</div>
+        <div class="sign">€</div>
+      </div>
+      <div class="price-info">pro Monat & Sensor</div>
+      <div class="min-sensor-count">ab 50 Sensoren</div>
+    </div>
+  </div>
+
+  <div class="fine-print">
+    <p class="fine-print-text">
+      *Pro Raum wird ein Sensor empfohlen. Mindestabnahmemenge sind 5 Sensoren. Mindestlaufzeit 6 Monate. Danach
+      monatlich
+      kündbar. 100€ pro nicht zurückgegebenem Sensor. Unser Leistungs- und Produktangebot richtet sich an gewerbliche
+      Abnehmer, Preise zzgl. MwSt..
+    </p>
+
+    {% include contact-button.html text="Angebot anfordern"%}
   </div>
 </div>
