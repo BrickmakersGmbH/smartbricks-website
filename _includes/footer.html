@@ -23,7 +23,8 @@
     </svg>
   </div>
   <div class='footer-links'>
-    <a class='dont-display-on-small' href="/impressum/">Impressum</a>
-    <a class='dont-display-on-small' href="https://www.brickmakers.de/datenschutz/">Datenschutz</a>
+    {% for link in site.data.footer_links %}
+    <a href="{{link.url}}">{{link.name}}</a>
+    {% endfor %}
   </div>
 </footer>
