@@ -21,7 +21,9 @@
 title: smartBRICKS
 email: info@brickmakers.de
 description: >- # this means to ignore newlines until "baseurl:"
-  Smart building Solutions
+  Kohlendioxid (CO2) ist ein ausschlaggebendes Kriterium für gute oder schlechte Luftqualität.
+  Mit dem Airtracker bieten wir eine erweiterbare Komplettlösung an, die es Ihnen ermöglicht, 
+  in Räumen den CO2 Gehalt, Temperatur und Luftfeuchtigkeit zu messen.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.smart-bricks.de" # the base hostname & protocol for your site, e.g. http://example.com
 lang: de
