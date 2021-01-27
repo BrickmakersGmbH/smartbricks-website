@@ -2,6 +2,7 @@
 layout: page
 title: Impressum
 permalink: /impressum/
+content_class: 'markdown-content'
 ---
 
 BRICKMAKERS GmbH<br>
