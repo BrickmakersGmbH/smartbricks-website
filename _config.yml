@@ -28,6 +28,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.smart-bricks.de" # the base hostname & protocol for your site, e.g. http://example.com
 lang: de
 
+appStoreLinks:
+  android: "https://play.google.com/store"
+  ios: "https://www.apple.com/app-store/"
+
 # Build settings
 plugins:
   - jekyll-feed

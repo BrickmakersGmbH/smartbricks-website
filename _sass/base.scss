@@ -47,6 +47,12 @@ $on-laptop:        1200px !default;
   }
 }
 
+@mixin max-width($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
@@ -56,6 +62,7 @@ $on-laptop:        1200px !default;
   "theme/base",
   "theme/layout",
   "theme/markdown_content",
+  "theme/qr_code_landingpage",
   "index/be-smart-be-safe",
   "index/questions",
   "index/what-is-the-airtracker",
