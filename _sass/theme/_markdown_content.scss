@@ -1,4 +1,14 @@
 .markdown-content {
+
+  h1, h2, h3 {
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+
+    line-height: 1.25;
+  }
+
   h2 {
     margin: 12px 0 16px;
   }
