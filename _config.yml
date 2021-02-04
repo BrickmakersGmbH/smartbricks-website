@@ -29,7 +29,7 @@ url: "https://www.smart-bricks.de" # the base hostname & protocol for your site,
 lang: de
 
 appStoreLinks:
-  android: "https://play.google.com/store"
+  android: "https://play.google.com/store/apps/details?id=de.brickmakers.smartbricks.app"
   ios: "https://www.apple.com/app-store/"
 
 # Build settings
