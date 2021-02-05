@@ -30,7 +30,7 @@ lang: de
 
 appStoreLinks:
   android: "https://play.google.com/store/apps/details?id=de.brickmakers.smartbricks.app"
-  ios: "https://www.apple.com/app-store/"
+  ios: "https://apps.apple.com/de/app/smartbricks/id1544058761"
 
 # Build settings
 plugins:
