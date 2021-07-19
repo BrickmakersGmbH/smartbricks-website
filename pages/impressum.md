@@ -13,8 +13,8 @@ Telefon: 0261 / 205 999 – 00<br>
 Fax: 0261 / 205 999 – 29<br>
 Email: info@brickmakers.de<br>
 
-Geschäftsführung: Timo Ziegler<br>
-Redaktionell Verantwortlicher gem. § 55 Abs. 2 RStV: Timo Ziegler<br>
+Geschäftsführung: Jannik, Weyrich, Timo Ziegler<br>
+Redaktionell Verantwortlicher gem. § 55 Abs. 2 RStV: Jannik, Weyrich, Timo Ziegler<br>
 Registergericht: Amtsgericht Koblenz, HRB 21093<br>
 Ust-Id Nr. DE 259 545 439<br>
 
